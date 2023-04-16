@@ -12,8 +12,8 @@
     <p>This project is aimed at developing a suitable product that can perform all the required functionalities, which include cheating prevention and student authentication. The product is expected to ensure that the candidate focuses on the test screen during the test, there is enough light in the room, and that suspicious objects are flagged to prevent cheating. We will be using computer vision techniques for face recognition, identifying objects, and detecting each of the unfair means used by the student.</p>
     <h2>Team</h2>
     <ul>
-      <li>Ankit Singh (<a href="https://www.linkedin.com/in/ankit-singh-4a4b35132/">LinkedIn</a> | <a href="https://github.com/ankit-singh-unnao">Github</a>)</li>
-      <li>Vivek Dev Shah (<a href="https://www.linkedin.com/in/vivek-dev-shah-6805a71b5/">LinkedIn</a> | <a href="https://github.com/vivekdevshah">Github</a>)</li>
+      <li>Ankit Singh (<a href="https://www.linkedin.com/in/ankit-singh-4a4b35132/" target ="_blank">LinkedIn</a> | <a href="https://github.com/ankit-singh-unnao" target ="_blank">Github</a>)</li>
+      <li>Vivek Dev Shah (<a href="https://www.linkedin.com/in/vivek-dev-shah-6805a71b5/" target ="_blank">LinkedIn</a> | <a href="https://github.com/vivekdevshah" target ="_blank">Github</a>)</li>
       <li>Praveen Shankar (<a href="https://www.linkedin.com/in/praveen-shankar-096630212/">LinkedIn</a> | <a href="https://github.com/praveen-shankar">Github</a>)</li>
       <li>Mohit Yadav (<a href="https://www.linkedin.com/in/mohit-yadav-9a045b207/">LinkedIn</a> | <a href="https://github.com/mohit-yadav-97">Github</a>)</li>
     </ul>

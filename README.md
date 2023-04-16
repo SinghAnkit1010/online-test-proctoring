@@ -36,6 +36,13 @@
   <li><strong>Convolutional Neural Network (CNN):</strong> A CNN was used for eye tracking based on the Kaggle dataset. The model takes as input a series of frames captured from a webcam and detects the location of the user's eyes. This information is used to ensure that the user is looking at the screen and not at any other devices or materials during the test.</li>
   <li><strong>Database:</strong> A database was maintained to store user information and exam data. It includes information about users who successfully submitted the test as well as those who were caught cheating during the test. This helps to track student progress and ensure the integrity of the testing process.</li>
 </ul>
+<h2>Enhancements</h2>
+<p>There are several potential enhancements that could be made to our proctoring system:</p>
+<ul>
+  <li><strong>Improving accuracy:</strong> The models used in the system could be further trained and fine-tuned on larger datasets to improve their accuracy and performance.</li>
+  <li><strong>Head movement detection:</strong> The addition of head movement detection could help to further prevent cheating by detecting when a user is looking away from the screen or otherwise moving their head in a way that suggests they may be attempting to cheat.</li>
+</ul>
+<p>By implementing these enhancements and continuing to refine the system over time, we believe that our proctoring system can become an even more effective tool for ensuring the integrity of online tests and exams.</p>
 	<h1>Tech Stacks Used</h1>
 	<ul>
 		<li>Flask</li>

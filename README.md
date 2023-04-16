@@ -28,6 +28,14 @@
 		<li>Smart Device Detection</li>
 		<p>Smart device detection in online test proctoring involves using software that can detect the presence of any electronic device within the range of the exam area, such as a mobile phone, smartwatch, or tablet. It can help prevent cheating by ensuring that the test taker is not using any electronic devices to access unauthorized resources during the exam.</p>
 	</ul>
+	 <h2>Implementation</h2>
+<p>The proctoring system makes use of several machine learning models and techniques for effective monitoring of online tests. Here are some details about the models and techniques used:</p>
+<ul>
+  <li><strong>FaceNet Model:</strong> The FaceNet model is used for face recognition and authentication during the online test proctoring process. It takes an image of a person's face as input and outputs a 128-dimensional vector representation of the face. This vector is then compared with the vectors of other faces in the database to verify the identity of the person taking the test.</li>
+  <li><strong>YOLOv5:</strong> YOLOv5 is a state-of-the-art object detection model that was used to train our custom object detection model to detect mobile phones within the range of the exam area. This helps prevent cheating by detecting when students attempt to use their phones during the test.</li>
+  <li><strong>Convolutional Neural Network (CNN):</strong> A CNN was used for eye tracking based on the Kaggle dataset. The model takes as input a series of frames captured from a webcam and detects the location of the user's eyes. This information is used to ensure that the user is looking at the screen and not at any other devices or materials during the test.</li>
+  <li><strong>Database:</strong> A database was maintained to store user information and exam data. It includes information about users who successfully submitted the test as well as those who were caught cheating during the test. This helps to track student progress and ensure the integrity of the testing process.</li>
+</ul>
 	<h1>Tech Stacks Used</h1>
 	<ul>
 		<li>Flask</li>

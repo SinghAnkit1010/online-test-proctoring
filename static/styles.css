@@ -97,7 +97,7 @@ p {
 .button-primary {
   position: relative;
   background-color: #c0ca33;
-  color: #fff;
+  color: #000000;
   font-size: 1.8rem;
   font-weight: 700;
   transition: color 0.3s ease-in;
@@ -144,7 +144,9 @@ p {
 }
 .header-area {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
+  padding-top: 30vh;
+  padding-bottom: 30vh;
   background:  rgb(205, 228, 204);
   /* background-image: linear-gradient(to right, rgb(39, 133, 241) , rgb(245, 106, 13)); */
   background-attachment: fixed;
@@ -242,11 +244,11 @@ p {
 }
 .navbar-dark .navbar-nav .nav-link {
   position: relative;
-  color: #fff;
+  color: #000000;
   font-size: 1.6rem;
 }
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-  color: #fff;
+  color: #ffffff;
 }
 .navbar .dropdown-menu {
   padding: 0;
@@ -527,15 +529,15 @@ p {
 
 /* login/register */
 .gradient-custom {
-    /* fallback for old browsers */
-    background: #0bf17e;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgb(23, 62, 233), rgb(56, 187, 52));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgb(23, 62, 233),  rgb(56, 187, 52))
-    }
+  /* fallback for old browsers */
+  background: #0bf17e;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgb(23, 62, 233), rgb(91, 192, 88));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgb(23, 62, 233), rgb(91, 192, 88))
+  }
 
 /* btn  */
 .gradient-custom-2 {
@@ -566,7 +568,150 @@ p {
     height: auto;
   }
 
-  .info{
-    margin-top: 60px;
-    margin-bottom: 60px;
+  .info-1{
+    font-family: 'Open Sans', sans-serif;
+      padding-top: 100px;
+      color: #ffffff;
+      padding-bottom: 100px;
+      color: #ffffff;
+      font-weight: 700;
+  
+    }
+
+  .info-2{
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to right, rgb(63, 78, 209), rgb(114, 45, 224));
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #ffffff;
+    font-weight: 700;
   }
+
+  .info-3{
+    font-family: 'Open Sans', sans-serif;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      color: #000000;
+      font-weight: 700;
+      position: relative;
+      background:  #c0e9e1;
+    }
+
+    .info-3 h1 {
+      font-weight: 700;
+      color: #000000;
+    }
+
+    .info-3 p li {
+      font-weight: 500;
+      color: #000000;
+    }
+
+    .info-4{
+      font-family: 'Open Sans', sans-serif;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        color: #000000;
+        font-weight: 700;
+        position: relative;
+        background:  rgb(240, 240, 240);
+      }
+
+      .info-4 h1{
+        text-align: center;
+        font-weight: 700;
+        padding-bottom: 20px;
+        font-size: 40px;
+      }
+
+    /* test page  */
+/* .instructions{
+  padding-left: 20px;
+} */
+
+    .dos{
+      font-family: 'Open Sans', sans-serif;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      color: #000000;
+      font-weight: 700;
+      position: relative;
+      background-color: #0bf17e;
+    }
+
+    .donts{
+      font-family: 'Open Sans', sans-serif;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      color: #000000;
+      font-weight: 700;
+      position: relative;
+      background-color: #d8363a;
+    }
+    
+
+    /* testing page  */
+
+    /* .question.qcontainer {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #0c0b0b9c;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+     */
+    
+    
+    .question form {
+      margin-top: 20px;
+    }
+    
+    .question p {
+      margin-bottom: 10px;
+    }
+    
+    .question textarea {
+      width: 100%;
+      height: 500px;
+      background-color: #918a8a;
+      color: #f3f3f3;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      overflow-x: scroll;
+    }
+    
+
+    .info-5{
+      font-family: 'Open Sans', sans-serif;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #000000;
+        
+        font-weight: 300;
+        position: relative;
+        background:  #fffffd;
+      }
+
+      .info-6{
+      background-color: #918a8a;
+
+      }
+
+      /* video streaming */
+      .video-container {
+        width: 40%;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+      }
+      
+      .video-container image {
+        width: 300px;
+        height: 200px;
+        /* Add any additional styles for the video as needed */
+      }
+      

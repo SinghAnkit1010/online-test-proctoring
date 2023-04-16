@@ -14,7 +14,7 @@ from werkzeug.utils import secure_filename
 
 
 my_db = db_connector.connect(host = "localhost",user = "root",passwd = "deeplearning",
-database = "online-test-proctoring",auth_plugin="mysql_native_password",autocommit = True)
+database = "vivek-otp",auth_plugin="mysql_native_password",autocommit = True)
 
 app = Flask(__name__,template_folder="template") 
 app.secret_key = os.urandom(22)
@@ -78,21 +78,24 @@ def landing_page():
 
 @app.route('/random')
 def random():
-    return render_template("login_page.html")
+    return render_template("login.ejs")
 
 @app.route("/register")
 def register():
-    return render_template("registration.html")
+    return render_template("register.ejs")
 
 
-@app.route("/test_page")
+@app.route("/test-page")
 def test_page():
-    return render_template("test_page.html")
+    return render_template("test-page.ejs")
 
 @app.route('/testing')
 def testing():
-    return render_template("final_test.html")
+    return render_template("testing.ejs")
 
+@app.route('/post-test-page')
+def post_test_page():
+    return render_template("post-test-page.ejs")
 
 @app.route('/proctoring')
 def proctoring():
@@ -110,7 +113,7 @@ def login():
             session["loggedin"] = True
             #session["email"] = account["email"]
             #session["id"] = account["id"]
-            return redirect("/test_page")
+            return redirect("/test-page")
         else:
             return redirect("/random")
 

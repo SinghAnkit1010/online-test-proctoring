@@ -97,7 +97,7 @@ p {
 .button-primary {
   position: relative;
   background-color: #c0ca33;
-  color: #000000;
+  color: #ffffff;
   font-size: 1.8rem;
   font-weight: 700;
   transition: color 0.3s ease-in;
@@ -244,11 +244,11 @@ p {
 }
 .navbar-dark .navbar-nav .nav-link {
   position: relative;
-  color: #000000;
+  color: #ffffff;
   font-size: 1.6rem;
 }
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-  color: #ffffff;
+  color: #000000;
 }
 .navbar .dropdown-menu {
   padding: 0;
@@ -703,10 +703,11 @@ p {
 
       /* video streaming */
       .video-container {
-        width: 40%;
+        width: 30%;
         position: fixed;
-        top: 10px;
-        right: 10px;
+        top: 60px;
+        left: 1100px;
+        /* right: 1px; */
       }
       
       .video-container image {
@@ -715,3 +716,22 @@ p {
         /* Add any additional styles for the video as needed */
       }
       
+      .timer{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 30px;
+        color: #f5f1f1;
+        font-weight: 600;
+        /* background-color: #3ee470; */
+        padding: 2px;
+        
+      }
+
+      .info-7{
+        font-family: 'Open Sans', sans-serif;
+  /* background: linear-gradient(to right, rgb(216, 216, 216), rgb(0, 0, 0)); */
+  background:  rgb(253, 253, 253);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #000000;
+    font-weight: 700;
+      }

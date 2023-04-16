@@ -32,7 +32,7 @@
                 <div class="card-body p-5 text-center">
       
                   <div class="mb-md-5 mt-md-4 pb-5">
-                    
+
                   <form action="/login" method="post">
                     <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
                     <p class="text-white-50 mb-5">Please enter your email and password!</p>
@@ -46,6 +46,15 @@
                     </div>
             
                     <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+                    <!-- {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                    <ul class="flashes">
+                    {% for message in messages %}
+                      <li>{{ message }}</li>
+                    {% endfor %}
+                    </ul>
+                    {% endif %}
+                    {% endwith %} -->
                   </form>
                   </div>
       

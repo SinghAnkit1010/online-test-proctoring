@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request,redirect,url_for,session,Response
+from flask import Flask,render_template,request,redirect,url_for,session,Response,flash
 from flask_mysqldb  import MySQL
 import MySQLdb.cursors
 import pickle
@@ -66,12 +66,6 @@ def video_streaming():
     capture.release()
     cv2.destroyAllWindows()
 
-
-
-
-
-
-
 @app.route('/')
 def landing_page():
     return render_template('home.ejs')
@@ -93,9 +87,23 @@ def test_page():
 def testing():
     return render_template("testing.ejs")
 
+@app.route('/documentation')
+def documentation():
+    return render_template("documentation.ejs")
+
+@app.route('/contact',methods = ["GET","POST"])
+def contact():
+    if request.method == "POST":
+        return render_template("thankyou.ejs")
+    return render_template("contact.ejs")
+
 @app.route('/post-test-page')
 def post_test_page():
     return render_template("post-test-page.ejs")
+
+@app.route('/invalid-credentials')
+def invalid_credentials():
+    return render_template("invalid-credentials.ejs")
 
 @app.route('/proctoring')
 def proctoring():
@@ -115,7 +123,9 @@ def login():
             #session["id"] = account["id"]
             return redirect("/test-page")
         else:
-            return redirect("/random")
+            return redirect("/invalid-credentials")
+            # flash('User is not registered. Please sign up first.')
+            # return render_template("invalid-credentials.ejs")
 
 @app.route("/logout")
 def logout():
@@ -140,13 +150,14 @@ def add_user():
         my_cursor = my_db.cursor()
         my_cursor.execute("INSERT INTO accounts VALUES (%s, %s, %s, %s);", (username, passwd, email,institute))
         msg = "Successfully registered!"
-        return render_template("login_page.html",msg = msg)
-    return render_template("login_page.html")
-@app.route('/stopcamera', methods=["GET",'POST'])
+        return render_template("login.ejs",msg = msg)
+    return render_template("login.ejs")
+
+@app.route('/stopcamera')
 def stopcamera(): 
-    capture.release()
-    cv2.destroyAllWindows()
-    return redirect("/")
+        capture.release()
+        cv2.destroyAllWindows()
+        return redirect("/post-test-page")
 
 
 if __name__ == '__main__':

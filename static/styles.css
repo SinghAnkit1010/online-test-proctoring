@@ -700,3 +700,18 @@ p {
       background-color: #918a8a;
 
       }
+
+      /* video streaming */
+      .video-container {
+        width: 40%;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+      }
+      
+      .video-container image {
+        width: 300px;
+        height: 200px;
+        /* Add any additional styles for the video as needed */
+      }
+      

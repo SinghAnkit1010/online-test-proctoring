@@ -14,7 +14,7 @@ from werkzeug.utils import secure_filename
 
 
 my_db = db_connector.connect(host = "localhost",user = "root",passwd = "deeplearning",
-database = "online-test-proctoring",auth_plugin="mysql_native_password",autocommit = True)
+database = "vivek-otp",auth_plugin="mysql_native_password",autocommit = True)
 
 app = Flask(__name__,template_folder="template") 
 app.secret_key = os.urandom(22)
@@ -113,7 +113,7 @@ def login():
             session["loggedin"] = True
             #session["email"] = account["email"]
             #session["id"] = account["id"]
-            return redirect("/test_page")
+            return redirect("/test-page")
         else:
             return redirect("/random")
 

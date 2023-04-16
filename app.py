@@ -78,21 +78,24 @@ def landing_page():
 
 @app.route('/random')
 def random():
-    return render_template("login_page.html")
+    return render_template("login.ejs")
 
 @app.route("/register")
 def register():
-    return render_template("registration.html")
+    return render_template("register.ejs")
 
 
-@app.route("/test_page")
+@app.route("/test-page")
 def test_page():
-    return render_template("test_page.html")
+    return render_template("test-page.ejs")
 
 @app.route('/testing')
 def testing():
-    return render_template("final_test.html")
+    return render_template("testing.ejs")
 
+@app.route('/post-test-page')
+def post_test_page():
+    return render_template("post-test-page.ejs")
 
 @app.route('/proctoring')
 def proctoring():

@@ -1,10 +1,10 @@
-#from mtcnn.mtcnn import MTCNN
 import cv2
 import keras
 from keras.models import Sequential 
 from keras.layers import Dense ,Flatten ,Conv2D ,MaxPooling2D ,Dropout ,BatchNormalization ,GlobalMaxPool2D
 import numpy as np
-#face_detector = MTCNN()
+#from mtcnn.mtcnn import MTCNN
+
 
 model=Sequential([
                   Conv2D(32,3,activation='relu',kernel_initializer='he_normal',input_shape=(224,224,3)),
@@ -52,15 +52,21 @@ class eye_detection:
         else:
             return 0
     def result(self,face_detector,image):
-        bbox = face_detector.detect_faces(image)[0]["box"]
-        x,y,w,h = bbox
-        x1,y1,x2,y2 = x,y,x+w,y+h
-        face = image[y1:y2,x1:x2]
-        gray = cv2.cvtColor(face,cv2.COLOR_BGR2GRAY)
-        eye_cascade = cv2.CascadeClassifier("env\Lib\site-packages\cv2\data\haarcascade_eye.xml")
-        eyes = eye_cascade.detectMultiScale(gray,scaleFactor=1.3, minNeighbors=5)
-        left_eye = eyes[0]
-        right_eye = eyes[1]
-        return self.helper(face,left_eye,right_eye)
+        #face_detector = MTCNN()
+        bbox = face_detector.detect_faces(image)
+        if len(bbox) != 0:
+            bbox = bbox[0]["box"]
+            x,y,w,h = bbox
+            x1,y1,x2,y2 = x,y,x+w,y+h
+            face = image[y1:y2,x1:x2]
+            gray = cv2.cvtColor(face,cv2.COLOR_BGR2GRAY)
+            eye_cascade = cv2.CascadeClassifier(r"C:\Users\Praveen Shankar\AppData\Local\Programs\Python\Python311\Lib\site-packages\cv2\data\haarcascade_eye.xml")
+            eyes = eye_cascade.detectMultiScale(gray,scaleFactor=1.3, minNeighbors=5)
+            left_eye = eyes[0]
+            right_eye = eyes[1]
+            return self.helper(face,left_eye,right_eye)
+        else:
+            return -1
+    
 
 

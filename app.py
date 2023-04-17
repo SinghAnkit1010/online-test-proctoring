@@ -68,6 +68,7 @@ def video_streaming():
             distance = face_encoder.compute_distance(embeddings[0],curr_face[0])
             if distance > 0.4:
                 other_person += 1
+                cv2.putText(image,"other person detected",(x1,y1),cv2.FONT_HERSHEY_TRIPLEX,2,(0,0,255))
             obj = eye_detection()
             eye_move = obj.result(face_detector,image)
             if eye_move == 0:
@@ -83,6 +84,7 @@ def video_streaming():
         phone = object.result(image)
         if phone == 1:
             phone_sus += 1
+            cv2.putText(image,"phone detected",(x1,y1),cv2.FONT_HERSHEY_TRIPLEX,2,(0,0,255))
         ret,buffer = cv2.imencode(".jpg",image)
         image = buffer.tobytes()
         yield (b'--frame\r\n'
@@ -185,13 +187,13 @@ def add_user():
 
 @app.route('/stopcamera', methods=["GET",'POST'])
 def stopcamera():
-    streaming = False 
-    if(not_detected >= 10 or other_person >= 8 or phone_sus >= 10 or eye_sus > 25):
-        my_cursor = my_db.cursor()
-        my_cursor.execute("INSERT INTO rejected VALUES (%s);", (email))
-    else:
-        my_cursor = my_db.cursor()
-        my_cursor.execute("INSERT INTO successful VALUES (%s);", (email))
+    # streaming = False 
+    # if(not_detected >= 10 or other_person >= 8 or phone_sus >= 10 or eye_sus > 25):
+    #     my_cursor = my_db.cursor()
+    #     my_cursor.execute("INSERT INTO rejected VALUES (%s);", (email,))
+    # else:
+    #     my_cursor = my_db.cursor()
+    #     my_cursor.execute("INSERT INTO successful VALUES (%s);", (email,))
     capture.release()
     cv2.destroyAllWindows()
     return redirect("/post-test-page")

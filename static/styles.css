@@ -703,16 +703,17 @@ p {
 
       /* video streaming */
       .video-container {
-        width: 30%;
         position: fixed;
+        width: 80px;
+        height: 50px;
         top: 60px;
-        left: 1300px;
+        left: 900px;
         /* right: 1px; */
       }
       
       .video-container image {
-        width: 300px;
-        height: 200px;
+        width: 80px;
+        height: 50px;
         /* Add any additional styles for the video as needed */
       }
       

@@ -45,21 +45,21 @@ h-6805a71b5/" target ="_blank">LinkedIn</a> | <a href="https://github.com/vivekd
   <li><strong>Head movement detection:</strong> The addition of head movement detection could help to further prevent cheating by detecting when a user is looking away from the screen or otherwise moving their head in a way that suggests they may be attempting to cheat.</li>
 </ul>
 <p>By implementing these enhancements and continuing to refine the system over time, we believe that our proctoring system can become an even more effective tool for ensuring the integrity of online tests and exams.</p>
-<h1>Screenshot</h1>
-	![Screenshot (42)](https://user-images.githubusercontent.com/101961142/232357402-d529ec41-430d-484b-8cf4-c2c2dc414896.png)
-![Screenshot (39)](https://user-images.githubusercontent.com/101961142/232357407-d8a202eb-8218-4f5e-a90d-ba146033bd0e.png)
-![Screenshot (37)![Uploading Screenshot (43).png…]()
-![Screenshot (38)](https://user-images.githubusercontent.com/101961142/232357536-ff766445-72d1-44e3-addb-0e3a63d0057e.png)
-![Screenshot (34)](https://user-images.githubusercontent.com/101961142/232357548-e22334e9-9bf0-4904-bd22-99e3fe6697d5.png)
-](https://user-images.githubusercontent.com/101961142/232357410-7b943c13-ca4f-49ef-908e-0d17e6cc78a5.png)
-![Screenshot (35)](https://user-images.githubusercontent.com/101961142/232357413-9647d2e7-a43a-4da9-aeb0-2f47c4db4e1c.png)
-![Screenshot (41)](https://user-images.githubusercontent.com/101961142/232357415-918f26e3-4ff2-43fc-b4bb-062adb5145db.png)
-
 <h1>Tech Stacks Used</h1>
 	<ul>
+		<li>Deep Learning</li>
 		<li>Flask</li>
 		<li>MySQL</li>
 		<li>JavaScript</li>
 		<li>HTML/CSS</li>
 		<li>Bootstrap</li>
 	</ul>
+<h1>Screenshot</h1>
+<img src="https://user-images.githubusercontent.com/101961142/232357548-e22334e9-9bf0-4904-bd22-99e3fe6697d5.png">
+<img src="https://user-images.githubusercontent.com/101961142/232357413-9647d2e7-a43a-4da9-aeb0-2f47c4db4e1c.png">
+<img src="https://user-images.githubusercontent.com/101961142/232357410-7b943c13-ca4f-49ef-908e-0d17e6cc78a5.png">
+<img src="https://user-images.githubusercontent.com/101961142/232357407-d8a202eb-8218-4f5e-a90d-ba146033bd0e.png">
+<img src="https://user-images.githubusercontent.com/101961142/232357415-918f26e3-4ff2-43fc-b4bb-062adb5145db.png">
+<img src="https://user-images.githubusercontent.com/101961142/232357402-d529ec41-430d-484b-8cf4-c2c2dc414896.png">
+<img src="https://user-images.githubusercontent.com/101961142/232358378-2220c004-802c-4029-bdd1-dfeaaf6c881d.png">
+

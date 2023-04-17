@@ -7,13 +7,15 @@
     <h2>Problem Statement:</h2>
     <p>In online tests without proctoring, cases are often reported of impersonation and cheating. Students either ask someone else to take the test on their behalf or use methods of cheating like referring to a textbook, using smartphones or other devices to search for answers online or taking help from a friend. The two major concerns of the customer are cheating and student authentication. It ensures the candidate focuses on the test screen during the test; there is enough light in the room and checks for suspicious objects to red flag the test. It also uses face recognition to do student authentication. Develop a suitable product that can perform all these functionalities. Use suitable Computer Vision techniques for face recognition and identifying objects. The product should be able to detect each of the mentioned unfair means used by the student. Students are supposed to deploy the model using a website or Android application.</p>
     <h2>Introduction</h2>
-    <p>The idea behind an online test proctoring model is to use technology to monitor and proctor online exams to prevent cheating and ensure academic integrity. In addition to ensuring academic integrity, online test proctoring models can also provide benefits such as flexibility, convenience, and cost savings. Students can take exams from anywhere with an internet connection, and institutions can save resources by not having to hire physical proctors for online exams.</p>
+    <p>The idea behind an online test proctoring model is to use technology to monitor and proctor online exams to prevent cheating and ensure academic integrity. In addition to ensuring academic integrity, online test proctoring models can also provide benefits such as flexibility, convenience, and cost savings. Students can take exams from anywhere with an internet connection, and institutions can save resources by not having to hire physical proctors for online exams.</p>![Screenshot (43)](https://user-images.githubusercontent.com/101961142/232357523-c5949228-3188-4e5c-bbe9-91f8cf5d8fbe.png)
+
     <p>This project is aimed at developing a suitable product that can perform all the required functionalities, which include cheating prevention and student authentication. The product is expected to ensure that the candidate focuses on the test screen during the test, there is enough light in the room, and that suspicious objects are flagged to prevent cheating. We will be using computer vision techniques for face recognition, identifying objects, and detecting each of the unfair means used by the student.</p>
     <p>This project is aimed at developing a suitable product that can perform all the required functionalities, which include cheating prevention and student authentication. The product is expected to ensure that the candidate focuses on the test screen during the test, there is enough light in the room, and that suspicious objects are flagged to prevent cheating. We will be using computer vision techniques for face recognition, identifying objects, and detecting each of the unfair means used by the student.</p>
     <h2>Team</h2>
     <ul>
       <li>Ankit Singh (<a href="https://www.linkedin.com/in/ankit-singh-4a4b35132/" target ="_blank">LinkedIn</a> | <a href="https://github.com/ankit-singh-unnao" target ="_blank">Github</a>)</li>
-      <li>Vivek Dev Shah (<a href="https://www.linkedin.com/in/vivek-dev-shah-6805a71b5/" target ="_blank">LinkedIn</a> | <a href="https://github.com/vivekdevshah" target ="_blank">Github</a>)</li>
+      <li>Vivek Dev Shah (<a href="https://www.linkedin.com/in/vivek-dev-sha![Screenshot (40)](https://user-images.githubusercontent.com/101961142/232357425-74b9a584-122d-42ed-97ba-cd95f5e25835.png)
+h-6805a71b5/" target ="_blank">LinkedIn</a> | <a href="https://github.com/vivekdevshah" target ="_blank">Github</a>)</li>
       <li>Praveen Shankar (<a href="https://www.linkedin.com/in/praveen-shankar-096630212/" target ="_blank">LinkedIn</a> | <a href="https://github.com/praveen-shankar" target ="_blank">Github</a>)</li>
       <li>Mohit Yadav (<a href="https://www.linkedin.com/in/mohit-yadav-9a045b207/" target ="_blank">LinkedIn</a> | <a href="https://github.com/mohit-yadav-97" target ="_blank">Github</a>)</li>
     </ul>
@@ -43,7 +45,17 @@
   <li><strong>Head movement detection:</strong> The addition of head movement detection could help to further prevent cheating by detecting when a user is looking away from the screen or otherwise moving their head in a way that suggests they may be attempting to cheat.</li>
 </ul>
 <p>By implementing these enhancements and continuing to refine the system over time, we believe that our proctoring system can become an even more effective tool for ensuring the integrity of online tests and exams.</p>
-	<h1>Tech Stacks Used</h1>
+<h1>Screenshot</h1>
+	![Screenshot (42)](https://user-images.githubusercontent.com/101961142/232357402-d529ec41-430d-484b-8cf4-c2c2dc414896.png)
+![Screenshot (39)](https://user-images.githubusercontent.com/101961142/232357407-d8a202eb-8218-4f5e-a90d-ba146033bd0e.png)
+![Screenshot (37)![Uploading Screenshot (43).png…]()
+![Screenshot (38)](https://user-images.githubusercontent.com/101961142/232357536-ff766445-72d1-44e3-addb-0e3a63d0057e.png)
+![Screenshot (34)](https://user-images.githubusercontent.com/101961142/232357548-e22334e9-9bf0-4904-bd22-99e3fe6697d5.png)
+](https://user-images.githubusercontent.com/101961142/232357410-7b943c13-ca4f-49ef-908e-0d17e6cc78a5.png)
+![Screenshot (35)](https://user-images.githubusercontent.com/101961142/232357413-9647d2e7-a43a-4da9-aeb0-2f47c4db4e1c.png)
+![Screenshot (41)](https://user-images.githubusercontent.com/101961142/232357415-918f26e3-4ff2-43fc-b4bb-062adb5145db.png)
+
+<h1>Tech Stacks Used</h1>
 	<ul>
 		<li>Flask</li>
 		<li>MySQL</li>

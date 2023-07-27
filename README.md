@@ -6,18 +6,19 @@
 		<li>Face Detection</li>
 		<p>we have used MTCNN model for face detection which consists of three stages of convolutional networks that are able to recognize faces and landmark location such as eyes, nose, and mouth The 3 stages of MTCNN are P-Net, R-Net, O-Net. And with the help of this model we can detect faces and also detect if there is multiple faces which is not acceptable.</p>
 		<li>Face Authentication</li>
-		<p>Face authentication in online test proctoring involves using a computer vision system to capture and analyze the test taker's face during the exam. The system compares the facial features of the test taker against the reference facial features on file to ensure that they remain the same person throughout the duration of the exam.</p>
+		<p>We have used FaceNet for face recognition in oreder to know whether the person giving exam is the 
+                   registered student or different .</p>
 		<li>Eye Tracking</li>
-		<p>Eye tracking in online test proctoring involves using a camera or sensor to track the movements of the test taker's eyes while they are taking the exam. It can detect any suspicious behavior, such as if the test taker is looking away from the screen for an extended period or if they are constantly shifting their gaze.</p>
+		<p>Eye tracking in online test proctoring involves utilizing a camera or sensor to monitor the student's eye movements during the exam. It aims to detect suspicious behaviors, such as prolonged periods of looking away from the screen or constant gaze shifting. This process utilizes Convolutional Neural Networks (CNNs) with transfer learning on VGG16. The model is trained on a dataset specifically designed for eye detection. The top layers of VGG16 are removed, and the weights are frozen during this process. After training for 50 epochs on this dataset https://www.kaggle.com/datasets/kayvanshah/eye-dataset, we achieved following results:</p>
 		<li>Smart Device Detection</li>
-		<p>Smart device detection in online test proctoring involves using software that can detect the presence of any electronic device within the range of the exam area, such as a mobile phone, smartwatch, or tablet. It can help prevent cheating by ensuring that the test taker is not using any electronic devices to access unauthorized resources during the exam.</p>
-	</ul>
-	 <h2>Implementation</h2>
-<p>The proctoring system makes use of several machine learning models and techniques for effective monitoring of online tests. Here are some details about the models and techniques used:</p>
-<ul>
-  <li><strong>FaceNet Model:</strong> The FaceNet model is used for face recognition and authentication during the online test proctoring process. It takes an image of a person's face as input and outputs a 128-dimensional vector representation of the face. This vector is then compared with the vectors of other faces in the database to verify the identity of the person taking the test.</li>
-  <li><strong>YOLOv5:</strong> YOLOv5 is a state-of-the-art object detection model that was used to train our custom object detection model to detect mobile phones within the range of the exam area. This helps prevent cheating by detecting when students attempt to use their phones during the test.</li>
-  <li><strong>Convolutional Neural Network (CNN):</strong> A CNN was used for eye tracking based on the Kaggle dataset. The model takes as input a series of frames captured from a webcam and detects the location of the user's eyes. This information is used to ensure that the user is looking at the screen and not at any other devices or materials during the test.</li>
+		<p> During Exam smart devices are not allowed,specially mobile phones. so, we trained a yolov5 model on 
+                   custom dataset to detect phones easily and we got following results:
+		   </p>
+			
+  | Class | Images | Instances |    P    |    R    | mAP50 | mAP50-95 |
+|-------|--------|-----------|---------|---------|-------|----------|
+| all   |     36 |        36 |    1    |   0.97  | 0.991 |   0.845  |
+
   <li><strong>Database:</strong> A database was maintained to store user information and exam data. It includes information about users who successfully submitted the test as well as those who were caught cheating during the test. This helps to track student progress and ensure the integrity of the testing process.</li>
 </ul>
 <h2>Enhancements</h2>

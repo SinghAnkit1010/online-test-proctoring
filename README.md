@@ -20,7 +20,7 @@
 | all   |     36 |        36 |    1    |   0.97  | 0.991 |   0.845  |
 
 we got Precision 1 which indicates that model have almost 0 false positive  that is it will not detect phones if there is no phones along whith that we have also got 97% Recall which indicates that model have minimum false negative.
-  <li><strong>Database:</strong> A database was maintained to store user information and exam data. It includes information about users who successfully submitted the test as well as those who were caught cheating during the test. This helps to track student progress and ensure the integrity of the testing process.</li>
+  <li><strong>Database:</strong> we have also maintained a  MySql database  to store user information and exam data. It includes information about users who successfully submitted the test as well as those who were caught cheating during the test. This helps to track student progress and ensure the integrity of the testing process.</li>
 </ul>
 <h2>Enhancements</h2>
 <p>There are several potential enhancements that could be made to our proctoring system:</p>

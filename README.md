@@ -9,7 +9,7 @@
 		<p>We have used FaceNet for face recognition in oreder to know whether the person giving exam is the 
                    registered student or different .</p>
 		<li>Eye Tracking</li>
-		<p>Eye tracking in online test proctoring involves utilizing a camera or sensor to monitor the student's eye movements during the exam. It aims to detect suspicious behaviors, such as prolonged periods of looking away from the screen or constant gaze shifting. This process utilizes Convolutional Neural Networks (CNNs) with transfer learning on VGG16. The model is trained on a dataset specifically designed for eye detection. The top layers of VGG16 are removed, and the weights are frozen during this process. After training for 50 epochs on this dataset https://www.kaggle.com/datasets/kayvanshah/eye-dataset, we achieved following results:</p>
+		<p>Eye tracking in online test proctoring involves utilizing a camera or sensor to monitor the student's eye movements during the exam. It aims to detect suspicious behaviors, such as prolonged periods of looking away from the screen or constant gaze shifting. This process utilizes Convolutional Neural Networks (CNNs) with transfer learning on VGG16. The model is trained on a dataset specifically designed for eye detection. The top layers of VGG16 are removed, and the weights are frozen during this process. After training for 50 epochs on this dataset https://www.kaggle.com/datasets/kayvanshah/eye-dataset, we achieved  75% accuracy and 80% Precision on test data</p>
 		<li>Smart Device Detection</li>
 		<p> During Exam smart devices are not allowed,specially mobile phones. so, we trained a yolov5 model on 
                    custom dataset to detect phones easily and we got following results:
